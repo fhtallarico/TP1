@@ -17,7 +17,7 @@ int main (void)
 	int resFactoreoB;
 	int verificadorFactoreo = 0;
 
-	printf("\nBienvenido a la calculadora!");
+	printf("\nBienvenido a la calculadora!\n");
 
 	do
 	{
@@ -84,11 +84,14 @@ int main (void)
 			}
 			else
 			{
-				printf("No se pudo realizar la factorizacion de uno de los elementos.\n");
+				printf("\nNo se pudo realizar la factorizacion de uno de los elementos.\n");
 			}
 			break;
 		case 5: // CORTA EL BUCLE
 
+			break;
+		default: // EN CASO DE QUE SE INGRESE UNA OPCION QUE NO SEA ENTRE 1 Y 5 IMPRIME ERROR.
+			printf("\n---------------Opcion invalida.--------------------\n");
 			break;
 		}
 
