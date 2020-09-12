@@ -26,17 +26,17 @@ int main (void)
 
 		switch(opcion)
 		{
-		case 1:
+		case 1: // INGRESO DEL PRIMER NUMERO
 			if(getInt("\nIngrese el primer operando: ", "\nError, ingrese un numero valido: ", &operandoA, 5, 32767, -32768) == 0)
 			{
 			}
 			break;
-		case 2:
+		case 2: // INGRESO DEL SEGUNDO NUMERO
 			if(getInt("\nIngrese el segundo operando: ", "\nError, ingrese un numero valido: ", &operandoB, 5, 32767, -32768) == 0)
 			{
 			}
 			break;
-		case 3:
+		case 3: // REALIZA LAS OPERACIONES
 			sumar(operandoA, operandoB, &resSuma);
 
 			restar(operandoA, operandoB, &resResta);
@@ -65,7 +65,7 @@ int main (void)
 				buscarFactorial(operandoB, &resFactoreoB);
 			}
 			break;
-		case 4:
+		case 4: // MUESTRA LOS RESULTADOS
 			printf("\nLos operandos son %d y %d",operandoA, operandoB);
 			printf("\nEl resultado de A+B es: %d", resSuma);
 			printf("\nEl resultado de A-B es: %d", resResta);
@@ -87,7 +87,7 @@ int main (void)
 				printf("No se pudo realizar la factorizacion de uno de los elementos.\n");
 			}
 			break;
-		case 5:
+		case 5: // CORTA EL BUCLE
 
 			break;
 		}
